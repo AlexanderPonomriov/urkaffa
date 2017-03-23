@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+
+@FILE assets/templates/urkaffa/chunks/head.tpl
+
+  {{styles}}
+
+  <body>
+    <div class="page text-center">
+      
+      @FILE assets/templates/urkaffa/chunks/header.tpl
+
+      @FILE assets/templates/urkaffa/chunks/breadcrumps.tpl 
+
+
+      <!-- Page Content-->
+      <main class="page-content section-75 section-md-top-90 section-md-bottom-110">
+        <!-- Modern Blog-->
+        <section>
+          <div class="shell">
+            
+            <div class="range range-xs-center range-lg-left offset-top-15">
+              <div class="cell-sm-10 cell-md-9 cell-lg-7 cell-lg-push-1">                
+
+                [!getPosts!]
+
+                <div class="post-modern-timeline-right offset-top-30 offset-lg-top-64">
+                  <nav>
+                    <ul class="pager pager-custom">
+                      [!getPostsNavigation!]
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="cell-sm-10 cell-md-9 cell-lg-3 text-sm-left offset-top-64 offset-lg-top-25">
+                <p class="font-accent text-bold text-spacing-50 text-mine-shaft text-uppercase font-RotondaC-Bold">Поиск</p>
+                <div class="offset-top-30">
+                  <!-- RD Search Form-->
+                  <form action="[~109~]" method="GET" class="form-search blog-form-search rd-search">
+                    <div class="form-group">
+                      <input type="text" name="s" autocomplete="off" class="form-search-input form-control null">
+                    </div>
+                    <button type="submit" class="form-search-submit"><span class="icon icon-sm material-icons-ico material-icons-search"></span></button>
+                  </form>
+                </div>
+                <div class="offset-top-35">
+                  <div class="hr bg-gray-lighter"></div>
+                </div>
+                <div class="range range-xs-center offset-top-55">
+                  <div class="cell-sm-3 cell-lg-12">
+                    <p class="font-accent text-bold text-spacing-50 text-mine-shaft text-uppercase font-RotondaC-Bold">Категории</p>
+                    <div class="offset-top-25">
+                      <ul class="list-marked text-extra-small text-bold p text-left font-accent">
+
+                        [!getCategoryList!]
+
+                      </ul>
+                    </div>
+                    <div class="veil-sm reveal-lg-block offset-top-30 offset-sm-top-0 offset-lg-top-30">
+                      <div class="hr bg-gray-lighter"></div>
+                    </div>
+                  </div>
+                  <div class="cell-sm-3 cell-lg-12 offset-lg-top-55">
+                    <p class="font-accent text-bold text-spacing-50 text-mine-shaft text-uppercase font-RotondaC-Bold">Архив</p>
+                    <div class="offset-top-25">
+                      <ul class="list-marked text-extra-small text-bold p text-left font-accent">
+
+                      [!getPostsArchive!]
+
+                      </ul>
+                    </div>
+                    <div class="veil-sm reveal-lg-block offset-top-30 offset-sm-top-0 offset-lg-top-30">
+                      <div class="hr bg-gray-lighter"></div>
+                    </div>
+                  </div>
+                  <div class="cell-sm-6 cell-lg-12 offset-lg-top-55">
+                    <p class="font-accent text-bold text-spacing-50 text-mine-shaft text-uppercase font-RotondaC-Bold">tags</p>
+                    <div class="offset-top-20">
+                      <!-- List inline marked-->
+                      <ul class="list-inline list-tags font-accent text-bold text-spacing-inverse-25 text-left">
+
+                        [!getPostsTags!]
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      
+      @FILE assets/templates/urkaffa/chunks/footer.tpl
+      
+    </div>
+
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    
+  {{scripts}}
+      
+  </body>
+    
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+
+@FILE assets/templates/urkaffa/chunks/head.tpl
+
+	{{styles}}
+
+	<body>
+		<div class="page text-center">
+			
+			@FILE assets/templates/urkaffa/chunks/header.tpl
+			
+			@FILE assets/templates/urkaffa/chunks/breadcrumps.tpl
+
+			<!-- Page Content-->
+			    <main class="page-content">
+			        
+			        <section class="section-75 section-md-top-90 section-md-bottom-30">
+
+			          	<div class="shell">
+
+					        <div>
+					            <h1 class="letter-spacing-1">[*pagetitle*]</h1>
+					        </div>
+
+                    		<div class="embed-responsive embed-responsive-16by9">
+
+                      			<iframe src="//www.youtube.com/embed/[!getVideoCode!]?wmode=transparent" class="embed-responsive-item"></iframe>
+
+                    		</div>
+
+					        <div class="range range-xs-center offset-top-30 text-left">
+
+					            <div class="cell-sm-12 cell-md-12 font-RotondaC post-content">
+
+					                <p class="text-spacing-0 font-RotondaC post-content">[*content*]</p>
+
+					            </div>
+
+					        </div>
+					            
+			          	</div>
+
+			        </section>
+
+			    </main>
+
+
+			@FILE assets/templates/urkaffa/chunks/footer.tpl
+			
+		</div>
+		
+	{{scripts}}
+			
+	</body>
+		
+</html>

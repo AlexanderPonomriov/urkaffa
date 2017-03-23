@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+
+@FILE assets/templates/urkaffa/chunks/head.tpl
+
+  {{styles}}
+
+  <body>
+    <div class="page text-center">
+      
+      @FILE assets/templates/urkaffa/chunks/header.tpl
+
+      @FILE assets/templates/urkaffa/chunks/breadcrumps.tpl 
+
+
+      <main class="page-content">
+        <!-- History-->
+        <section class="section-75 section-md-top-90 section-md-bottom-95">
+
+          <div class="shell">
+
+            <div class="section-md-top-90">
+
+              <img src='/assets/images/stalker-club-logo.png' alt=''/>
+
+            </div> 
+
+            <div class="range range-xs-center offset-top-35">
+
+              <div class="cell-sm-8 cell-lg-6">                
+
+                <div class="offset-top-20">
+
+                  <p class="text-mine-shaft stalker-club-slogan  uppercase text-bold">[*stalkerClubSlogan*]</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="range range-xs-center offset-top-35">
+
+              <div class="cell-sm-10 cell-lg-10">
+
+                <span class="icon material-icons-ico material-icons-format_quote text-alto"></span>
+
+                <div class="offset-top-20 offset-bottom-20">
+
+                  <p class="text-spacing-0 about-text-center font-RotondaC">[*stalkerClubDescription*]</p>
+
+                </div>
+
+                <span class="icon material-icons-ico material-icons-format_quote text-alto rotate-180-deg"></span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section> 
+
+        <section>
+
+          <div class="range range-condensed offset-top-30">
+
+            <div data-items="1" data-sm-items="2" data-stage-padding="-20" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav="true" data-dots="true" class="owl-carousel owl-nav-primary owl-fullwidth-items">
+
+              [!multiTV?
+                  &tvName=`stalkerClubSlider`
+                  &docid=`[*id*]`
+                  &tplConfig=``
+                  &display=`50`
+                  &outerTpl=`@CODE:((wrapper))`
+                  &rowTpl=`@CODE: <div class="owl-item stalker-club-slider">
+
+                                    <!-- Post Inspiration-->
+                                    <div class="post-inspiration post-inspiration-img-auto-height">
+
+                                      <div class="post-inspiration-img-wrap">
+
+                                        <div class="stalker-club-slider-slide" style="background: url('[+image+]') center no-repeat;" background="[+image+]"></div>                                    
+
+                                      </div>
+
+
+                                      <div class="post-inspiration-body">
+
+                                          <div style="margin-bottom: 20px;" class="veil reveal-sm-inline-block text-bottom">
+
+                                            <img src="/assets/images/divider-01-67x4.png" width="67" height="4" alt="" class="img-responsive center-block">
+
+                                          </div>
+
+                                          <div class="veil reveal-sm-inline-block">
+
+                                            <span class="icon icon-lg thin-ico thin-icon-anchor text-white"></span>
+
+                                          </div>
+
+                                          <div style="margin-bottom: 20px;" class="veil reveal-sm-inline-block text-bottom">
+
+                                            <img src="/assets/images/divider-01-67x4.png" width="67" height="4" alt="" class="img-responsive center-block">
+
+                                          </div>
+
+                                          <div class="offset-top-20">
+
+                                              <h5 class="text-spacing-50 font-RotondaC">[+title+]</h5>
+
+                                          </div>
+
+                                          <div class="offset-top-30">
+                                              <p class="text-spacing-0 font-RotondaC">[+description+]</p>
+                                          </div>
+
+                                      </div>
+
+                                    </div>
+
+                                </div>`
+
+              !]
+
+            </div>
+
+          </div>
+
+          <div class="shell">
+
+            <div class="range range-xs-center offset-top-35">
+
+              <div class="cell-sm-8 cell-lg-6">                
+
+                <div class="offset-top-20">
+
+                  <p class="text-mine-shaft h5 uppercase text-bold font-ClearSans-Bold">Сталкер Клаб - это:</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="range range-xs-center list-index-lg offset-md-top-25">
+
+              [!multiTV?
+                  &tvName=`stalkerClubThisIs`
+                  &docid=`[*id*]`
+                  &tplConfig=``
+                  &offset=`0`
+                  &display=`20`
+                  &outerTpl=`@CODE:((wrapper))`
+                  &rowTpl=`@CODE: <div class="cell-sm-10 cell-md-4 offset-top-25 offset-md-top-40">
+
+                                      <div class="list-index-counter h2 text-silver-chalice text-spacing-inverse-75 font-Quicksand-Light"></div>
+
+                                      <div class="offset-top-25 offset-md-top-40 stalker-club-this-is">
+
+                                        <p class="text-spacing-0 font-RotondaC">[+legend+]</p>
+
+                                      </div>
+
+                                  </div>`
+
+              !]
+
+              </div>
+
+            </div>
+
+        </section>     
+       
+      </main>
+      
+      
+      
+      @FILE assets/templates/urkaffa/chunks/footer.tpl
+      
+    </div>
+
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    
+  {{scripts}}
+      
+  </body>
+    
+</html>

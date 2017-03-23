@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation smoothscroll scrollTo">
+
+@FILE assets/templates/urkaffa/chunks/head.tpl
+
+  {{styles}}
+
+  <body>
+    <div class="page text-center">
+      
+      @FILE assets/templates/urkaffa/chunks/header.tpl
+
+      @FILE assets/templates/urkaffa/chunks/breadcrumps.tpl 
+
+
+      <main class="page-content">
+        <!-- History-->
+        <section class="section-75 section-md-top-90 section-md-bottom-95">
+
+          <div class="shell">
+
+            <div>
+
+              <img src='/assets/images/logo_blue.png' alt=''/>
+
+            </div> 
+
+            <div class="range range-xs-center offset-top-35">
+
+              <div class="cell-sm-8 cell-lg-6">
+
+                <span class="icon material-icons-ico material-icons-format_quote text-alto"></span>
+
+                <div class="offset-top-20">
+
+                  <p class="text-mine-shaft uppercase text-bold">[*urkaffaSlogan*]</p>
+
+                </div>
+
+                <span class="icon material-icons-ico material-icons-format_quote text-alto rotate-180-deg"></span>
+
+              </div>
+
+            </div>
+            
+            <div class="range range-xs-center offset-top-30 text-left">
+
+              <div class="cell-sm-8 cell-md-10 ">
+
+                <p class="text-spacing-0 about-text-center font-RotondaC">[*urkaffaShortDescription*]</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section> 
+
+        <section>
+          <div class="shell">
+
+            <div class="range range-xs-center list-index-lg offset-md-top-25">
+
+            [!getAboutComponents!]
+              
+            </div>
+
+
+          </div>
+        </section>       
+       
+      </main>
+      
+      
+      
+      @FILE assets/templates/urkaffa/chunks/footer.tpl
+      
+    </div>
+
+    <!-- Global Mailform Output-->
+    <div id="form-output-global" class="snackbars"></div>
+    
+  {{scripts}}
+      
+  </body>
+    
+</html>
